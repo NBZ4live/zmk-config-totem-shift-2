@@ -11,7 +11,12 @@ parse_config:
     right_alt: "⌥"
     left_gui: "⌘"
     right_gui: "⌘"
-  zmk_remove_keycode_prefix: ["DE_"]
+    keycode_combiner: '{mods}+{key}'
+    mod_combiner: '{mod_1}+{mod_2}'
+    special_combinations:
+      left_ctrl+left_alt+left_gui+left_shift: Hyper
+      left_ctrl+left_alt+left_shift: Meh
+  zmk_remove_keycode_prefix: ["DE_", "KP_"]
   raw_binding_map:
     "&td0": "1x:ALT 2x:WIN"
     "&sys_reset": "RESET"
@@ -39,7 +44,9 @@ parse_config:
     RCTRL: "^"
     RET: "⮐"
     ENTER: "⮐"
+    KP_ENTER: "⮐"
     TAB: "⇥"
+    INSERT: $$mdi:tray-arrow-down$$
     BACKSPACE: $$mdi:backspace-outline$$
     DELETE: $$mdi:backspace-reverse-outline$$
     C_PP: $$mdi:play-pause$$
@@ -54,11 +61,20 @@ parse_config:
     K_VOL_DN: $$mdi:volume-minus$$
     K_VOL_UP: $$mdi:volume-plus$$
     CAPS: $$mdi:apple-keyboard-caps$$
-    #LA(LEFT): "⌥+$$mdi:menu-left$$"
-    #LEFT_ARROW: $$mdi:menu-left$$
-    #DOWN: $$mdi:menu-down$$
-    #UP: $$mdi:menu-up$$
-    #RIGHT: $$mdi:menu-right$$
+    HOME: "⌂"
+    #LA(LEFT): "⌥+⬅"
+    LEFT_ARROW: "⬅"
+    LEFT: "⬅"
+    DOWN: "⬇"
+    DOWN_ARROW: "⬇"
+    PAGE_DOWN: "⇓"
+    PAGE_UP: "⇑"
+    UP: "⬆"
+    UP_ARROW: "⬆"
+    RIGHT: "➡"
+    RIGHT_ARROW: "➡"
+    DIVIDE: "/"
+    MULTIPLY: "*"
     # Defaults from https://github.com/caksoylar/keymap-drawer/blob/main/keymap_drawer/config.py#L420-L485
     EXCLAMATION: "!"
     EXCL: "!"
