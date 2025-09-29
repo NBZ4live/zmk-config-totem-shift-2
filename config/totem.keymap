@@ -150,7 +150,7 @@
                &kp Q         &kp W        &kp E       &kp R        &kp T        &kp Y      &kp U            &kp I         &kp O        &kp P
                &hm2 LGUI A  &hm2 LCTRL S  &hm2 LSHIFT D  &hm2 LALT F   &kp G        &kp H      &hm2 RALT J       &hm2 RSHIFT K    &hm2 RCTRL L  &hm2 RGUI SEMICOLON
        &trans  &kp Z         &kp X        &kp C       &kp V        &kp B        &kp N      &kp M            &kp COMMA     &kp DOT      &kp SQT           &lc 1 SLASH
-                                          &lt 1 ESC   &lt 2 SPACE  &lt 3 TAB    &lt 4 RET  &lt 5 BACKSPACE  &lt 6 DELETE
+                                          &lt 1 ESC   &lt 2 SPACE  &lt 6 TAB    &lt 4 RET  &lt 5 BACKSPACE  &lt 3 DELETE
             >;
         };
 
